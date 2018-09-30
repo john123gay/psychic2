@@ -1,0 +1,172 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+	"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+
+<head>
+	<title>Guess That Letter!!!</title>
+	<meta http-equiv="content-type" content="text/html;charset=utf-8" />
+	<meta name="generator" content="Geany 1.32" />
+	<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+ <div>
+    <h1 class="center" id="directions-text">Try to guess the letter im thinking of jack, press any letter to start. Guess right and
+    you get a point, guess wrong I get a point. You ready for this jack?</h1>
+    
+   <div class="screenit"> <h3 id="userchoice-text"></h3>
+    <h3 id="computerchoice-text"></h3>
+    <h3 id="wins-text"></h3>
+    <h3 id="losses-text"></h3>
+    </div>
+  </div>
+  <script type="text/javascript">
+     var compChoice = ["a","b","c","d","e","f","g","h","i","j","k","l","m","n","o",
+     "p","q","r","s","t","u","v","w","x","y","z"];
+     
+     var wins = 0;
+     var losses = 0;
+     
+     
+     var directions = document.getElementById("directions-text");
+     var userChoiceText = document.getElementById("userchoice-text");
+     var computerChoiceText = document.getElementById("computerchoice-text");
+     var winsText = document.getElementById("wins-text");
+     var lossesText = document.getElementById("losses-text");
+     
+     
+     document.onkeyup = function(event) {
+		 //get the users guess
+		 var userGuess = event.key;
+		 //computer guesses
+		 var compGuess = compChoice[Math.floor(Math.random() * compChoice.length)];
+		  
+		  //game only begins if user hits a letter
+		  if( (userGuess === "a" ) || ( userGuess === "b") || (userGuess === "c") || (userGuess === "d") || 
+		  (userGuess ==="e") || (userGuess === "f") || (userGuess === "g") || (userGuess === "h") || (userGuess === "i") || 
+		  (userGuess === "j") || (userGuess === "k") || (userGuess === "l") || (userGuess === "m") || (userGuess === "n") ||
+		  (userGuess === "o") || (userGuess === "p") || (userGuess === "q") || (userGuess === "r") || (userGuess === "s") ||
+		  (userGuess === "t") ||(userGuess === "u") || (userGuess === "v") || (userGuess === "w") || (userGuess === "x") ||
+		  (userGuess === "y") || (userGuess === "z")) {
+			 
+			  if( (userGuess === "a") && (compGuess === "a" ) ) {
+				  wins++;
+			  } else if((userGuess === "a") && (compGuess !== "a")) {
+					 losses++; 
+			 
+			  } else if((userGuess === "b") && (compGuess === "b")) {
+					   wins++;
+			  } else if((userGuess === "b") && (compGuess !=="b")) {
+						 losses++;
+			  } else if((userGuess === "c") && (compGuess === "c")) {
+						   wins++;
+              } else if((userGuess === "c") && (compGuess !=="c")) {
+							   losses++;
+			  }  else if((userGuess === "d") && (compGuess === "d")) {
+					   wins++;
+			  } else if((userGuess === "d") && (compGuess !=="d")) {
+						 losses++;
+			  } else if((userGuess === "e") && (compGuess === "e")) {
+						   wins++;
+              } else if((userGuess === "e") && (compGuess !=="e")) {
+							   losses++;
+			  } else if((userGuess === "f") && (compGuess === "f")) {
+					   wins++;
+			  } else if((userGuess === "f") && (compGuess !=="f")) {
+						 losses++;
+			  } else if((userGuess === "g") && (compGuess === "g")) {
+						   wins++;
+              } else if((userGuess === "g") && (compGuess !=="g")) {
+							   losses++;
+			  } else if((userGuess === "h") && (compGuess === "h")) {
+					   wins++;
+			  } else if((userGuess === "h") && (compGuess !=="h")) {
+						 losses++;
+			  } else if((userGuess === "i") && (compGuess === "i")) {
+						   wins++;
+              } else if((userGuess === "i") && (compGuess !=="i")) {
+							   losses++;
+			} else if((userGuess === "j") && (compGuess === "j")) {
+					   wins++;
+			  } else if((userGuess === "j") && (compGuess !=="j")) {
+						 losses++;
+			  } else if((userGuess === "k") && (compGuess === "k")) {
+						   wins++;
+              } else if((userGuess === "k") && (compGuess !=="k")) {
+							   losses++;				   				    
+			   } else if((userGuess === "l") && (compGuess === "l")) {
+					   wins++;
+			  } else if((userGuess === "l") && (compGuess !=="l")) {
+						 losses++;
+			  } else if((userGuess === "m") && (compGuess === "m")) {
+						   wins++;
+              } else if((userGuess === "m") && (compGuess !=="m")) {
+							   losses++;
+			   } else if((userGuess === "n") && (compGuess === "n")) {
+					   wins++;
+			  } else if((userGuess === "n") && (compGuess !=="n")) {
+						 losses++;
+			  } else if((userGuess === "o") && (compGuess === "o")) {
+						   wins++;
+              } else if((userGuess === "o") && (compGuess !=="o")) {
+							   losses++;
+			   
+			   	  } else if((userGuess === "p") && (compGuess === "p")) {
+						   wins++;
+              } else if((userGuess === "p") && (compGuess !=="p")) {
+							   losses++;
+			} else if((userGuess === "q") && (compGuess === "q")) {
+					   wins++;
+			  } else if((userGuess === "q") && (compGuess !=="q")) {
+						 losses++;
+			  } else if((userGuess === "r") && (compGuess === "r")) {
+						   wins++;
+              } else if((userGuess === "r") && (compGuess !=="r")) {
+							   losses++;				   				    
+			   } else if((userGuess === "s") && (compGuess === "s")) {
+					   wins++;
+			  } else if((userGuess === "s") && (compGuess !=="s")) {
+						 losses++;
+			  } else if((userGuess === "t") && (compGuess === "t")) {
+						   wins++;
+              } else if((userGuess === "t") && (compGuess !=="t")) {
+							   losses++;
+			   } else if((userGuess === "u") && (compGuess === "u")) {
+					   wins++;
+			  } else if((userGuess === "u") && (compGuess !=="u")) {
+						 losses++;
+			  } else if((userGuess === "v") && (compGuess === "v")) {
+						   wins++;
+              } else if((userGuess === "v") && (compGuess !=="v")) {
+							   losses++;
+			  	   } else if((userGuess === "w") && (compGuess === "w")) {
+					   wins++;
+			  } else if((userGuess === "w") && (compGuess !=="w")) {
+						 losses++;
+			  } else if((userGuess === "x") && (compGuess === "x")) {
+						   wins++;
+              } else if((userGuess === "x") && (compGuess !=="x")) {
+							   losses++;
+			   } else if((userGuess === "y") && (compGuess === "y")) {
+					   wins++;
+			  } else if((userGuess === "y") && (compGuess !=="y")) {
+						 losses++;
+			  } else if((userGuess === "z") && (compGuess === "z")) {
+						   wins++;
+              } else if((userGuess === "z") && (compGuess !=="z")) {
+							   losses++; 
+			   }
+			
+                 directions.textContent = "";
+                 userChoiceText.textContent="Your pick:  " + userGuess;
+                 computerChoiceText.textContent="My pick:  " + compGuess;
+                 winsText.textContent = "Wins:  " + wins;
+                 lossesText.textContent = "Losses:  "+ losses;
+                 
+                 								   
+			  }
+		 };
+  </script>	
+</body>
+
+</html>

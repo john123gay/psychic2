@@ -1,0 +1,40 @@
+@import url('https://fonts.googleapis.com/css?family=Bangers');
+html,body {
+	color: #fff;
+	font-size: 16px;
+	font-family: "Bangers", sans-serif;
+	background-image: url("doom.png");
+	background-repeat: no-repeat;
+    
+	
+ } 
+ h1 {
+ 	font-size: 38px;
+ 	font-family: "Bangers", serif;
+ }
+ h2 {
+ 	font-size: 32px;
+ 	font-family: "Bangers", serif;
+ }
+ h3 {
+ 	font-size: 26px;
+ 	font-family: "Bangers", serif; 
+ }
+ h4 {
+ 	font-size: 22px;
+ 	font-family: "Bangers", serif; }
+ 
+ .screenit {
+  margin-left: 25%;
+  margin-top: 5%;
+  
+ 
+ 
+  }	
+.center {
+  text-align: center;
+  padding: 30px;
+  margin: 20px 5px;
+ }
+ 
+ 
